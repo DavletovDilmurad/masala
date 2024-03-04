@@ -456,7 +456,7 @@
 
 
 
-//misol40
+//misol40 ozim ishlamadim
 // function getBonus(obj, kbonus) {
 //     let totalBonus = 0;
 //     for (let key in obj) {
@@ -481,4 +481,81 @@
 
 
 
-///misol
+///misol41
+// function repeatStr (n, s) {
+//     let repeatedString = '';
+//     for (let i = 0; i < n; i++) {
+//         repeatedString += s;
+//     }
+//     return repeatedString;
+//   }
+//   let d =repeatStr(10,'d')
+// console.log(d);
+
+
+
+//missol42
+// function getGrade (s1, s2, s3) {
+//     const multiples = [];
+//     for (let i = 1; i <= n; i++) {
+//         multiples.push(x * i);
+//     }
+//     return multiples;
+//   }
+//     let d =getGrade(72,73,70)
+// console.log(d);
+
+
+//misol43
+
+    // function sumStr(a, b) {
+     
+    //     if (a === "") {
+    //         a = "0";
+    //     }
+    //     if (b === "") {
+    //         b = "0";
+    //     }
+        
+    //     var son1 = parseInt(a);
+    //     var son2 = parseInt(b);
+        
+    //     var yigindi = son1 + son2;
+        
+    //     return yigindi.toString();
+    // }
+   
+    // console.log(sumStr("2", ""));   
+
+
+    //misol43
+    // function squareSum(numbers){
+    //     let d = 0
+    // numbers.map((value,index)=>{
+    //  const d1 = value**2
+    //        d+=d1
+    // })
+    // return d
+    // }
+    // let d = squareSum([1,2])
+    // console.log(d);
+
+
+    //misol44
+    function isIsogram(str) {
+        str = str.toLowerCase();
+        let seen = {};
+    
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] in seen) {
+                return false;
+            } else {
+                seen[str[i]] = true;
+            }
+        }
+    
+        return true;
+    
+    }
+      let d =isIsogram('a')
+      console.log(d);
